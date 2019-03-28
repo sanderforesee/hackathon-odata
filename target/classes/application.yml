@@ -1,2 +1,4 @@
 server:
   port: ${port:8080}
+  servlet:
+    context-path: "/OData.svc"

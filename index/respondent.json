@@ -1,0 +1,43 @@
+{
+  "index_patterns" : ["respondent*"],
+  "settings" : {
+    "number_of_shards" : 1
+  },
+  "mappings": {
+    "responses": {
+      "_source": {
+        "enabled": false
+      },
+      "properties": {
+        "respondentkey.raw": {
+          "type": "keyword"
+        },
+        "respondentkey": {
+          "type": "long"
+        },
+        "measurementkey": {
+          "type": "keyword"
+        },
+        "customerkey": {
+          "type": "keyword"
+        },
+        "answerkey": {
+          "type": "keyword"
+        },
+        "answerlabel": {
+          "type": "text"
+        },
+        "qustionkey": {
+          "type": "keyword"
+        },
+        "qustiontext": {
+          "type": "text"
+        },
+        "daydate": {
+          "type": "date"
+        }
+
+      }
+    }
+  }
+}
